@@ -12,5 +12,4 @@ jobs:
 
       - name: Deploy
         run: |
-          chmod 777 startup.sh
           sh startup.sh 
