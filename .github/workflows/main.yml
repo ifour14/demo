@@ -11,7 +11,5 @@ jobs:
         uses: actions/checkout@master
 
       - name: Deploy
-        run: |
-          apt-get install dos2unix
-          dos2unix startup.sh 
+        run: 
           sh startup.sh 
