@@ -11,5 +11,6 @@ jobs:
         uses: actions/checkout@master
 
       - name: Deploy
-        run: 
+        run: |
+          chmod 777 startup.sh
           sh startup.sh 
