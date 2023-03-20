@@ -11,6 +11,5 @@ jobs:
         uses: actions/checkout@master
 
       - name: Deploy
-        run: |
-          source /etc/profile
+        run: 
           sh startup.sh 
