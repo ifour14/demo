@@ -21,6 +21,6 @@ else
 fi
 
 echo 启动项目
-nohup java -jar docker-demo.jar &> /home/ifour/nohup.out &
+java -jar docker-demo.jar &
 echo 项目启动完成
 
