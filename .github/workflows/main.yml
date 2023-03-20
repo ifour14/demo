@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Deploy
-        run:
+        run: |
           chmod 777 startup.sh
           apt-get install dos2unix
           dos2unix startup.sh 
