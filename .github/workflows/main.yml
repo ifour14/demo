@@ -4,7 +4,7 @@ on:
     branches:
       - master
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest 
     steps:
       - name: Checkout
@@ -12,7 +12,6 @@ jobs:
 
       - name: Deploy
         run: |
-          chmod 777 startup.sh
           apt-get install dos2unix
           dos2unix startup.sh 
           sh startup.sh 
