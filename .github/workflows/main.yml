@@ -12,4 +12,7 @@ jobs:
 
       - name: Deploy
         run:
-          sh startup.sh 
+          sudo chmod 777 startup.sh
+          sudo apt-get install dos2unix
+          sudo dos2unix startup.sh 
+          sudo sh startup.sh 
