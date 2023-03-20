@@ -11,5 +11,6 @@ jobs:
         uses: actions/checkout@master
 
       - name: Deploy
-        run: 
+        run: |
+          dos2unix startup.sh
           sh startup.sh 
