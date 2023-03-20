@@ -11,5 +11,5 @@ jobs:
         uses: actions/checkout@master
 
       - name: Deploy
-        run: 
+        run: |
           sh startup.sh 
