@@ -4,6 +4,6 @@ echo  自动化部署脚本启动
 echo =================================
 
 echo 启动项目
-nohup java -jar docker-demo.jar &> ./nohup.out &
+nohup java -jar docker-demo.jar &> > ./log.txt 2>&1 &
 echo 项目启动完成
 
